@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="home-icon"><img src="img/home_icon.png" alt="ホーム画面を表示"></div>
+        <h1>生理きろく</h1>
+        <div class="calendar-icon"><img src="img/calendar_icon.png" alt="カレンダーを表示"></div>
+    </header>
+
+    <div id="calendar" class="hidden">
+        <div id="calendar-grid"></div>
+    </div>
+
+    <main>
+        <!-- 今日の日付を表示 -->
+        <div id="view-today"></div>
+        <div id="calendar" class="hidden"></div>
+        
+
+        <div class="top-button">
+            <!-- はじまりボタン -->
+            <button type="button" id="button-start">はじまり</button>
+            <!-- おわりボタン -->
+            <button type="button" id="button-end">おわり</button>
+        </div>
+        
+        <div class="textarea-memo">
+            <!-- めも -->
+            <textarea name="memo" id="text-memo"></textarea>
+        </div>
+        
+        <div class="bottom-button">
+            <!-- きろくボタン -->
+            <button type="button" id="button-save">きろく</button>
+            <!-- とりけすボタン -->
+            <button type="button" id="button-clear">とりけす</button>
+        </div>
+        
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="js/memo.js"></script>
+</body>
+</html>
